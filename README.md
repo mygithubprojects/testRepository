@@ -1,38 +1,53 @@
-# `angular-seed` — the seed for AngularJS apps
+# `tp-arbre-tableau` — TP Angular JS
 
-This project is an application skeleton for a typical [AngularJS][angularjs] web app. You can use it
-to quickly bootstrap your angular webapp projects and dev environment for these projects.
+## Contact
 
-The seed contains a sample AngularJS application and is preconfigured to install the Angular
-framework and a bunch of development and testing tools for instant web development gratification.
+Abdenour BAHLOUL 
 
-The seed app doesn't do much, just shows how to wire two controllers and views together.
+Business & Decision [https://www.businessdecision.fr/]
+May 2017.
+
+
+
+Descriptions :
+----------------------------------------------------------------------------------
+Création d'un arbre et d'un tableau avec angular JS
+
+
+Recommandations : 
+----------------------------------------------------------------------------------
+Angularjs	1.5.x	peu importe la version mineure		
+ES6			http://es6-features.org	
+ui grid			https://github.com/angular-ui/ui-grid	à installer par npm, éviter bower
+material design			https://material.angularjs.org/latest/	
+nodes js	4,7,x	peu importe la version mineure		
+
 
 
 ## Getting Started
 
-To get you started you can simply clone the `angular-seed` repository and install the dependencies:
+To get you started you can simply clone the `tp-arbre-tableau` repository and install the dependencies:
 
 ### Prerequisites
 
 You need git to clone the `angular-seed` repository. You can get git from [here][git].
 
-We also use a number of Node.js tools to initialize and test `angular-seed`. You must have Node.js
+We also use a number of Node.js tools to initialize and test `tp-arbre-tableau`. You must have Node.js
 and its package manager (npm) installed. You can get them from [here][node].
 
-### Clone `angular-seed`
+### Clone `tp-arbre-tableau`
 
-Clone the `angular-seed` repository using git:
-
-```
-git clone https://github.com/angular/angular-seed.git
-cd angular-seed
-```
-
-If you just want to start a new project without the `angular-seed` commit history then you can do:
+Clone the `tp-arbre-tableau` repository using git:
 
 ```
-git clone --depth=1 https://github.com/angular/angular-seed.git <your-project-name>
+git clone https://github.com/gitProject01/tp-arbre-tableau.git
+cd tp-arbre-tableau
+```
+
+If you just want to start a new project without the `tp-arbre-tableau` commit history then you can do:
+
+```
+git clone --depth=1 https://github.com/gitProject01/tp-arbre-tableau.git <your-project-name>
 ```
 
 The `depth=1` tells git to only pull down one commit worth of historical data.
@@ -89,7 +104,14 @@ app/                    --> all of the source files for the application
       version-directive_test.js  --> version directive tests
       interpolate-filter.js      --> custom interpolation filter
       interpolate-filter_test.js --> interpolate filter tests
-  view1/                --> the view1 view template and logic
+    dist/              --> 
+      version.js                 --> version module declaration and basic "version" value service
+      version_test.js            --> "version" value service tests
+      version-directive.js       --> custom directive that returns the current app version
+      version-directive_test.js  --> version directive tests
+      interpolate-filter.js      --> custom interpolation filter
+      interpolate-filter_test.js --> interpolate filter tests	  
+  rbre/                --> the view1 view template and logic
     view1.html            --> the partial template
     view1.js              --> the controller logic
     view1_test.js         --> tests of the controller
@@ -273,9 +295,7 @@ You will need to enable the integration between Travis and GitHub. See the
 [Travis website][travis-docs] for instructions on how to do this.
 
 
-## Contact
 
-For more information on AngularJS please check out [angularjs.org][angularjs].
 
 
 [angularjs]: https://angularjs.org/

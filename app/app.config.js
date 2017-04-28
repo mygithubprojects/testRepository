@@ -10,8 +10,8 @@ angular.
                 .when('/tableau', {
                     controller: 'TableauCtrl',
                     templateUrl: 'tableau/tableau.html'
-                }).
-                otherwise('/arbre');
+                })
+             .otherwise('/arbre');
         }
     ]);
 

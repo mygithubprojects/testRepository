@@ -1,5 +1,18 @@
-<p>L'affichage du Tableau se fera ici.</p>
+<h3>L'affichage du Tableau se fera ici.</h3>
+
+
+<div ng-controller="TableauCtrl">
+  <button id="filterToggle" type="button" class="btn btn-success" ng-click="toggleFilterRow()">Toggle Filter</button>
+  <button id="refreshButton" type="button" class="btn btn-success" ng-click="refreshData()">Refresh Data</button> <strong>Calls Pending:</strong>  <span ng-bind="callsPending"></span>
+  <br>
+  <br>
+  <strong>{{ myData.length }} rows</strong>
+  <br>
+  <div id="grid1" ui-grid="gridOptions" ui-grid-cellNav ui-grid-edit ui-grid-resize-columns ui-grid-pinning ui-grid-selection
+    ui-grid-move-columns ui-grid-importer ui-grid-exporter ui-grid-grouping class="grid"></div>
+</div>
+
+
 <p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
+  Showing of 'interpolate' filter: {{ 'Current version is v%VERSION%.' | interpolate }}
 </p>

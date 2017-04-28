@@ -5,6 +5,7 @@ angular.module('tpAngular', [
   'ngRoute',
   'modArbre',
   'modTableau',
+  'ui.tree',
   'modVersion'
 ])
 

@@ -1,17 +1,19 @@
 'use strict';
-/*
-describe('myApp.arbre module', function() {
 
-  beforeEach(module('myApp.arbre'));
+describe('modArbre module', function() {
 
-  describe('view1 controller', function(){
+  beforeEach(module('modArbre'));
 
-    it('should ....', inject(function($controller) {
+  describe('arbre controller', function(){
+
+    it('L arbre est bien defni ....', inject(function($controller) {
       //spec body
-      var view1Ctrl = $controller('View1Ctrl');
-      expect(view1Ctrl).toBeDefined();
+      var arbreCtrl = $controller('arbreCtrl');
+      alert("test  -----------");
+      expect(arbreCtrl).toBeDefined();
     }));
-
   });
 });
+
+
 
