@@ -4,24 +4,27 @@
 
 Abdenour BAHLOUL 
 
-Business & Decision [https://www.businessdecision.fr/]
+[Business & Decision](https://www.businessdecision.fr/)
+ 
 May 2017.
 
 
 
 Descriptions :
 ----------------------------------------------------------------------------------
-Création d'un arbre et d'un tableau avec angular JS
+Création d'un arbre et d'un tableau avec angular JS 1.5
 
 
-Recommandations : 
+Technos : 
 ----------------------------------------------------------------------------------
-Angularjs	1.5.x	peu importe la version mineure		
-ES6			http://es6-features.org	
-ui grid			https://github.com/angular-ui/ui-grid	à installer par npm, éviter bower
-material design			https://material.angularjs.org/latest/	
-nodes js	4,7,x	peu importe la version mineure		
 
+| Lib/Framework  | version            | Commentaire  |
+| :-------------: |:----------------:| :-----:|
+| Angularjs| 1.5.x | peu importe la version mineure |
+| ES6|           |  http://es6-features.org  |
+| ui grid |         |    http://es6-features.org |
+| material design |         |    https://material.angularjs.org/latest/ |
+| nodes js |     4,7,x    |    peu importe la version mineure |
 
 
 ## Getting Started
@@ -30,7 +33,7 @@ To get you started you can simply clone the `tp-arbre-tableau` repository and in
 
 ### Prerequisites
 
-You need git to clone the `angular-seed` repository. You can get git from [here][git].
+You need git to clone the `tp-arbre-tableau` repository. You can get git from [here][git].
 
 We also use a number of Node.js tools to initialize and test `tp-arbre-tableau`. You must have Node.js
 and its package manager (npm) installed. You can get them from [here][node].
@@ -76,7 +79,7 @@ two new folders in your project.
 * `app/bower_components` - contains the Angular framework files
 
 *Note that the `bower_components` folder would normally be installed in the root folder but
-`angular-seed` changes this location through the `.bowerrc` file. Putting it in the `app` folder
+`tp-arbre-tableau` changes this location through the `.bowerrc` file. Putting it in the `app` folder
 makes it easier to serve the files by a web server.*
 
 ### Run the Application
@@ -105,21 +108,24 @@ app/                    --> all of the source files for the application
       interpolate-filter.js      --> custom interpolation filter
       interpolate-filter_test.js --> interpolate filter tests
     dist/              --> 
-      version.js                 --> version module declaration and basic "version" value service
-      version_test.js            --> "version" value service tests
-      version-directive.js       --> custom directive that returns the current app version
-      version-directive_test.js  --> version directive tests
-      interpolate-filter.js      --> custom interpolation filter
-      interpolate-filter_test.js --> interpolate filter tests	  
-  rbre/                --> the view1 view template and logic
-    view1.html            --> the partial template
-    view1.js              --> the controller logic
-    view1_test.js         --> tests of the controller
-  view2/                --> the view2 view template and logic
-    view2.html            --> the partial template
-    view2.js              --> the controller logic
-    view2_test.js         --> tests of the controller
-  app.js                --> main application module
+      angular-ui-tree.js                 --> fonctions liées à l'arbre
+      ui-grid.js            --> fonctions liées à l'arbre
+    css/              --> styles du projet 
+      angular-ui-tree.css                 --> css pour l'arbre 
+      app.css            --> css application
+      ui-grid.css        --> css pour l'arbre 
+     data/              --> données
+      tableau.json                 --> données du tableau 
+  arbre/                --> template de l'arbre et controlleur
+    arbre.html            --> the partial template
+    arbre.js              --> the controller logic
+    arbre_test.js         --> tests of the controller
+  tableau/                --> template du tableau et controlleur
+    tableau.html            --> the partial template
+    tableau.js              --> the controller logic
+    tableau_test.js         --> tests of the controller
+  app.config.js                --> main application module
+  app.module.js                --> fichier de définition des modules
   index.html            --> app layout file (the main html template file of the app)
   index-async.html      --> just like index.html, but loads js files asynchronously
 karma.conf.js         --> config file for running unit tests with Karma
@@ -131,16 +137,16 @@ e2e-tests/            --> end-to-end tests
 
 ## Testing
 
-There are two kinds of tests in the `angular-seed` application: Unit tests and end-to-end tests.
+There are two kinds of tests in the `tp-arbre-tableau` application: Unit tests and end-to-end tests.
 
 ### Running Unit Tests
 
-The `angular-seed` app comes preconfigured with unit tests. These are written in [Jasmine][jasmine],
+The `tp-arbre-tableau` app comes preconfigured with unit tests. These are written in [Jasmine][jasmine],
 which we run with the [Karma][karma] test runner. We provide a Karma configuration file to run them.
 
 * The configuration is found at `karma.conf.js`.
 * The unit tests are found next to the code they are testing and have an `_test.js` suffix (e.g.
-  `view1_test.js`).
+  `arebre_test.js`).
 
 The easiest way to run the unit tests is to use the supplied npm script:
 
@@ -166,7 +172,7 @@ npm run test-single-run
 <a name="e2e-testing"></a>
 ### Running End-to-End Tests
 
-The `angular-seed` app comes with end-to-end tests, again written in [Jasmine][jasmine]. These tests
+The `tp-arbre-tableau` app comes with end-to-end tests, again written in [Jasmine][jasmine]. These tests
 are run with the [Protractor][protractor] End-to-End test runner. It uses native events and has
 special features for Angular applications.
 
@@ -184,7 +190,7 @@ npm start
 ```
 
 In addition, since Protractor is built upon WebDriver, we need to ensure that it is installed and
-up-to-date. The `angular-seed` project is configured to do this automatically before running the
+up-to-date. The `tp-arbre-tableau` project is configured to do this automatically before running the
 end-to-end tests, so you don't need to worry about it. If you want to manually update the WebDriver,
 you can run:
 
@@ -227,7 +233,7 @@ respectively.
 
 ## Loading Angular Asynchronously
 
-The `angular-seed` project supports loading the framework and application scripts asynchronously.
+The `tp-arbre-tableau` project supports loading the framework and application scripts asynchronously.
 The special `index-async.html` is designed to support this style of loading. For it to work you must
 inject a piece of Angular JavaScript into the HTML page. The project has a predefined script to help
 do this:
@@ -250,7 +256,7 @@ etc to function properly when an HTML page is opened via the `file://` scheme in
 
 ### Running the App during Development
 
-The `angular-seed` project comes preconfigured with a local development web server. It is a Node.js
+The `tp-arbre-tableau` project comes preconfigured with a local development web server. It is a Node.js
 tool called [http-server][http-server]. You can start this web server with `npm start`, but you may
 choose to install the tool globally:
 
@@ -287,7 +293,7 @@ backend server(s) and web server(s).
 ### Travis CI
 
 [Travis CI][travis] is a continuous integration service, which can monitor GitHub for new commits to
-your repository and execute scripts such as building the app or running tests. The `angular-seed`
+your repository and execute scripts such as building the app or running tests. The `tp-arbre-tableau`
 project contains a Travis configuration file, `.travis.yml`, which will cause Travis to run your
 tests when you push to GitHub.
 

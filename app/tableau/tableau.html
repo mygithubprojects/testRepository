@@ -1,9 +1,13 @@
-<h3>L'affichage du Tableau se fera ici.</h3>
-
+<p style="font-size: 15px; font-weight: bold">Ce tableau affiche les éléments à partir d'un fichier .json</p>
+<p style="font-size: 15px; font-weight: bold">il est possible de trier les colonnes ainsi que de faire un filtre sur une colonne</p>
+<p style="font-size: 15px; font-weight: bold">(le menu en haut à droite permet : 
+  suppression d'une colonne, import d'un fichier de données, export sous format pdf de al totalité ou partie des donées...)</p>
+<br>
+<br>
 
 <div ng-controller="TableauCtrl">
-  <button id="filterToggle" type="button" class="btn btn-success" ng-click="toggleFilterRow()">Toggle Filter</button>
-  <button id="refreshButton" type="button" class="btn btn-success" ng-click="refreshData()">Refresh Data</button> <strong>Calls Pending:</strong>  <span ng-bind="callsPending"></span>
+  <button id="filterToggle" type="button" class="btn btn-success" ng-click="toggleFilterRow()">Supprimer tout les filtres</button>
+  <button id="refreshButton" type="button" class="btn btn-success" ng-click="refreshData()">Rafraichir les données</button> <strong>Calls Pending:</strong>  <span ng-bind="callsPending"></span>
   <br>
   <br>
   <strong>{{ myData.length }} rows</strong>
@@ -13,6 +17,6 @@
 </div>
 
 
-<p>
+<!--<p>
   Showing of 'interpolate' filter: {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+</p>-->

@@ -1,19 +1,26 @@
 'use strict';
 
-/*
-describe('myApp.view2 module', function() {
+// Test du composant tableau
+describe('Tableau : Test ', function () {
+    beforeEach(function () {
+        module('modTableau', [
+               'ngTouch', 'ui.grid', 'ui.grid.cellNav', 
+               'ui.grid.edit', 'ui.grid.resizeColumns', 
+               'ui.grid.pinning', 'ui.grid.selection', 
+               'ui.grid.moveColumns', 'ui.grid.exporter', 'ui.grid.importer', 
+               'ui.grid.grouping']);
+    });
 
-  beforeEach(module('myApp.view2'));
+    var controller, scope;
 
-  describe('view2 controller', function(){
-
-    it('should ....', inject(function($controller) {
-      //spec body
-      var view2Ctrl = $controller('View2Ctrl');
-      expect(view2Ctrl).toBeDefined();
+    beforeEach(inject(function ($controller, $rootScope) {
+        scope = $rootScope.$new();
+        controller = $controller('TableauCtrl', {
+            $scope: scope
+        });
     }));
 
-  });
+    it('initialistaion controlleur', function () {
+        expect(controller).toBeDefined();
+    });
 });
-
-*/

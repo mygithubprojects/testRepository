@@ -12377,7 +12377,7 @@ module.filter('px', function() {
           placeholder: 'Search...',
           showingItems: 'Showing Items:',
           selectedItems: 'Selected Items:',
-          totalItems: 'Total Items:',
+          totalItems: 'Nombre de lignes:',
           size: 'Page Size:',
           first: 'First Page',
           next: 'Next Page',
@@ -12854,7 +12854,7 @@ module.filter('px', function() {
         aggregation: {
           count: 'total rows: ',
           sum: 'total: ',
-          avg: 'avg: ',
+          avg: 'Moyenne: ',
           min: 'min: ',
           max: 'max: '
         },

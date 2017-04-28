@@ -1,4 +1,7 @@
-<h3>Affichage de l'Arbre.</h3>
+<p style="font-size: 15px; font-weight: bold">Cet arbre permet l'ajout et la suppression d'un noeud</p>
+<p style="font-size: 15px; font-weight: bold">il est aussi possible de modidifer la position d'un noeud avec un glisser déplacer</p>
+<br>
+<br>
 
 <!-- Nested node template -->
 <script type="text/ng-template" id="nodes_renderer.html">
@@ -26,10 +29,10 @@
 
 <div class="row">
   <div class="col-sm-12">
+      <button id="filterToggle" type="button" class="btn btn-success" ng-click="expandAll()"><strong>Dévlopper la liste </strong></button>
+      <button id="refreshButton" type="button" class="btn btn-success" ng-click="collapseAll()"><strong>Réduire la liste </strong></button>
 
 
-    <button ng-click="expandAll()">Expand all</button>
-    <button ng-click="collapseAll()">Collapse all</button>
   </div>
 </div>
 

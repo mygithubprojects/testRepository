@@ -2,7 +2,7 @@
   "name": "tp-arbre",
   "description": "Tp arbre Angular JS 1.5",
   "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-seed",
+  "homepage": "https://github.com/gitProject01/tp-arbre-tableau",
   "license": "MIT",
   "private": true,
   "dependencies": {
@@ -10,6 +10,7 @@
     "angular-route": "~1.5.0",
     "angular-loader": "~1.5.0",
     "angular-mocks": "~1.5.0",
-    "html5-boilerplate": "^5.3.0"
+    "html5-boilerplate": "^5.3.0",
+    "ngtouch": "^1.0.2"
   }
 }

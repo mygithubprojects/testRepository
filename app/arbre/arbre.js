@@ -45,52 +45,105 @@ angular.module('modArbre', ['ngRoute'])
 
       $scope.data = [{
         'id': 1,
-        'title': 'node1',
+        'title': 'A',
         'nodes': [
           {
             'id': 11,
-            'title': 'node1.1',
-            'nodes': [
-              {
-                'id': 111,
-                'title': 'node1.1.1',
-                'nodes': []
-              }
-            ]
+            'title': 'A1',
+            'nodes': []
           },
           {
             'id': 12,
-            'title': 'node1.2',
+            'title': 'A2',
+            'nodes': []
+          },
+          {
+            'id': 13,
+            'title': 'A3',
+            'nodes': []
+          },
+          {
+            'id': 14,
+            'title': 'A4',
+            'nodes': []
+          },
+          {
+            'id': 15,
+            'title': 'A5',
             'nodes': []
           }
+
         ]
       }, {
         'id': 2,
-        'title': 'node2',
+        'title': 'B',
         'nodrop': true, // An arbitrary property to check in custom template for nodrop-enabled
         'nodes': [
           {
             'id': 21,
-            'title': 'node2.1',
+            'title': 'B1',
             'nodes': []
           },
           {
             'id': 22,
-            'title': 'node2.2',
+            'title': 'B1',
+            'nodes': []
+          },
+          {
+            'id': 23,
+            'title': 'B3',
+            'nodes': []
+          },
+          {
+            'id': 24,
+            'title': 'B4',
             'nodes': []
           }
         ]
       }, {
         'id': 3,
-        'title': 'node3',
+        'title': 'C',
         'nodes': [
           {
             'id': 31,
-            'title': 'node3.1',
+            'title': 'C1',
+            'nodes': []
+          },
+          {
+            'id': 32,
+            'title': 'C2',
+            'nodes': []
+          },
+          {
+            'id': 33,
+            'title': 'C3',
             'nodes': []
           }
+
         ]
-      }]; 
+      }, {
+        'id': 4,
+        'title': 'D',
+        'nodes': [
+          {
+            'id': 41,
+            'title': 'D1',
+            'nodes': []
+          },
+          {
+            'id': 42,
+            'title': 'D2',
+            'nodes': []
+          },
+          {
+            'id': 43,
+            'title': 'D3',
+            'nodes': []
+          }
+
+        ]
+      }
+      ]; 
 
       
 

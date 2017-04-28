@@ -1,19 +1,27 @@
 'use strict';
 
-describe('modArbre module', function() {
+// Test du composant arbre
+describe('Arbre : Test ', function () {
+    beforeEach(function () {
+        module('modArbre');
+    });
 
-  beforeEach(module('modArbre'));
+    var controller, scope;
 
-  describe('arbre controller', function(){
-
-    it('L arbre est bien defni ....', inject(function($controller) {
-      //spec body
-      var arbreCtrl = $controller('arbreCtrl');
-      alert("test  -----------");
-      expect(arbreCtrl).toBeDefined();
+    beforeEach(inject(function ($controller, $rootScope) {
+        scope = $rootScope.$new();
+        controller = $controller('arbreCtrl', {
+            $scope: scope
+        });
     }));
-  });
+
+    it('initialistaion controlleur', function () {
+        expect(controller).toBeDefined();
+    });
 });
+
+
+
 
 
 
