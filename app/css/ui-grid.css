@@ -1882,3 +1882,11 @@ select[multiple].ui-grid-pager-row-count-picker select {
 div.ui-grid-cell-contents.invalid {
   border: 1px solid #fc8f8f;
 }
+
+/**
+* modification de la longieur et largeur par défaut de la grid
+*/
+.ui-grid, .ui-grid-viewport {
+    height: 285px;
+    width: 800px;
+}

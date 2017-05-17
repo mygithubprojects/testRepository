@@ -11,7 +11,7 @@ angular.
                     controller: 'TableauCtrl',
                     templateUrl: 'tableau/tableau.html'
                 })
-             .otherwise('/arbre');
+             .otherwise('/tableau');
         }
     ]);
 

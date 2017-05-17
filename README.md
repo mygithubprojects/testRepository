@@ -6,13 +6,13 @@ Abdenour BAHLOUL
 
 [Business & Decision](https://www.businessdecision.fr/)
  
-May 2017.
+May 2017
 
 
 
 Descriptions :
 ----------------------------------------------------------------------------------
-Création d'un arbre et d'un tableau avec angular JS 1.5
+Création d'un arbre et d'un tableau avec Angular JS 1.5
 
 
 Technos : 

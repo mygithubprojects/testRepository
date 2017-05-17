@@ -1,22 +1,36 @@
-<p style="font-size: 15px; font-weight: bold">Ce tableau affiche les éléments à partir d'un fichier .json</p>
-<p style="font-size: 15px; font-weight: bold">il est possible de trier les colonnes ainsi que de faire un filtre sur une colonne</p>
-<p style="font-size: 15px; font-weight: bold">(le menu en haut à droite permet : 
-  suppression d'une colonne, import d'un fichier de données, export sous format pdf de al totalité ou partie des donées...)</p>
 <br>
 <br>
 
 <div ng-controller="TableauCtrl">
-  <button id="filterToggle" type="button" class="btn btn-success" ng-click="toggleFilterRow()">Supprimer tout les filtres</button>
-  <button id="refreshButton" type="button" class="btn btn-success" ng-click="refreshData()">Rafraichir les données</button> <strong>Calls Pending:</strong>  <span ng-bind="callsPending"></span>
+  <!--  <button id="refreshButton" type="button" class="btn btn-success" ng-click="refreshData()">Historiques</button>-->
+  <button id="refreshButton" type="button" class="btn btn-success" ng-click="historiqueModifications()">Historiques</button>
+  <br>
+  <div data-ng-show="showError" ng-class="{fade:doFade}" class="alert alert-warning"><strong>Warning :</strong> {{errorMessage}}</div>
+  <div data-ng-show="showInfo" ng-class="{fade:doInfoFade}" class="alert alert-info"><strong>Information :</strong> {{infoMessage}}</div>
   <br>
   <br>
-  <strong>{{ myData.length }} rows</strong>
+  <strong>{{ myData.length }} lignes</strong>
   <br>
-  <div id="grid1" ui-grid="gridOptions" ui-grid-cellNav ui-grid-edit ui-grid-resize-columns ui-grid-pinning ui-grid-selection
-    ui-grid-move-columns ui-grid-importer ui-grid-exporter ui-grid-grouping class="grid"></div>
-</div>
+  <div class="row">
+    <div class="col-sm-7">
+      <div id="grid1" ui-grid="gridOptions" ui-grid-cellNav ui-grid-edit ui-grid-resize-columns ui-grid-pinning 
+        ui-grid-move-columns ui-grid-grouping class="grid"></div>
+    </div>
+
+    <div id="historique" class="col-sm-5">
+      <div class="info">
+        <h3> Historiques des modifications </h3>
+        <r>
+          <ul>
+            <li ng-repeat="hitorique in hitoriques">
+              <h4>{{hitorique.modifcation}}</h4>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
 
 
-<!--<p>
+  <!--<p>
   Showing of 'interpolate' filter: {{ 'Current version is v%VERSION%.' | interpolate }}
 </p>-->
