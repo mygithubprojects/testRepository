@@ -39,14 +39,14 @@ angular.module('modTableau', [
         },
         columnDefs: [
           { name: 'id', width: 50, cellEditableCondition: false },
-          { name: 'ChampA', width: 85, cellEditableCondition: false },
-          { name: 'ChampB', width: 85, cellEditableCondition: false },
-          { name: 'ChampC', width: 85, cellEditableCondition: false },
-          { name: 'ChampD', width: 85, cellEditableCondition: false },
+          { name: 'champA', width: 85, cellEditableCondition: false },
+          { name: 'champB', width: 85, cellEditableCondition: false },
+          { name: 'champC', width: 85, cellEditableCondition: false },
+          { name: 'champD', width: 85, cellEditableCondition: false },
           { name: 'indicateur1', width: 90, cellEditableCondition: false },
-          { name: 'Modif1', width: 85 },
+          { name: 'modif1', width: 85 },
           { name: 'indicateur2', width: 90, cellEditableCondition: false },
-          { name: 'Modif2', width: 90 }
+          { name: 'modif2', width: 90 }
         ],
         onRegisterApi: function onRegisterApi(registeredApi) {
           gridApi = registeredApi;
@@ -72,7 +72,8 @@ angular.module('modTableau', [
         var sec = $interval(function () {
           $scope.callsPending++;
 
-          $http.get('/data/tableau.json')
+          //$http.get('/data/tableau.json')
+          $http.get('http://localhost:7001/seedbackend/rest/indicateur/json')
             .success(function (data) {
               $scope.callsPending--;
 
