@@ -29,10 +29,9 @@ Technos :
 ## Vérifier l'environnement de développement
 1. ouvrir une invite de commande 
       
-      - executer la commande suivante :
-      
+      - executer la commande suivante :      
         node -v 
-        le résultat est le suivant : v4.7.x (peu importe la version mineure)
+      - le résultat est le suivant : v4.7.x (peu importe la version mineure)
 
 
 ## Getting Started
