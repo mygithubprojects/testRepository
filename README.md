@@ -26,6 +26,14 @@ Technos :
 | material design |         |    https://material.angularjs.org/latest/ |
 | nodes js |     4,7,x    |    peu importe la version mineure |
 
+## Vérifier l'environnement de développement
+1. ouvrir une invite de commande 
+      
+      - executer la commande suivante :
+      
+        node -v 
+        le résultat est le suivant : v4.7.x (peu importe la version mineure)
+
 
 ## Getting Started
 
