@@ -1,17 +1,17 @@
 'use strict';
 
-angular.module('modArbre', ['ngRoute'])
+angular.module('modBasicTree', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/arbre', {
-    templateUrl: 'arbre/arbre.html',
-    controller: 'arbreCtrl'
+  $routeProvider.when('/basic-tree', {
+    templateUrl: 'basic/basic-tree.html',
+    controller: 'treeCtrl'
   });
 }])
 
-.controller('arbreCtrl', ['$scope', function ($scope) {
+.controller('treeCtrl', ['$scope', function ($scope) {
            
-      $scope.remove = function (scope) {
+    $scope.remove = function (scope) {
         scope.remove();
       };
 
@@ -40,8 +40,6 @@ angular.module('modArbre', ['ngRoute'])
       $scope.expandAll = function () {
         $scope.$broadcast('angular-ui-tree:expand-all');
       };
-
-
 
       $scope.data = [{
         'id': 1,
@@ -81,17 +79,17 @@ angular.module('modArbre', ['ngRoute'])
         'nodes': [
           {
             'id': 21,
-            'title': 'B1',
+            'title': 'TEST',
             'nodes': []
           },
           {
             'id': 22,
-            'title': 'B1',
+            'title': 'ABC',
             'nodes': []
           },
           {
             'id': 23,
-            'title': 'B3',
+            'title': 'VRT',
             'nodes': []
           },
           {
@@ -143,7 +141,7 @@ angular.module('modArbre', ['ngRoute'])
 
         ]
       }
-      ]; 
+    ];
 
       
 

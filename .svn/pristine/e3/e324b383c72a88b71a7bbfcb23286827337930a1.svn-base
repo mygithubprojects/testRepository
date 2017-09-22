@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "ChampA": "A1",
+        "ChampB": "B1",
+        "ChampC": "C1",
+        "ChampD": "D4",
+        "indicateur1": "15",
+        "Modif1": "15",
+        "indicateur2": "15",
+        "Modif2": "15"
+
+    },
+    {
+        "id": 2,
+        "ChampA": "A2",
+        "ChampB": "B2",
+        "ChampC": "C2",
+        "ChampD": "D5",
+        "indicateur1": "21",
+        "Modif1": "21",
+        "indicateur2": "21",
+        "Modif2": "21"
+    },
+    {
+        "id": 3,
+        "ChampA": "A3",
+        "ChampB": "B3",
+        "ChampC": "C3",
+        "ChampD": "D6",
+        "indicateur1": "27",
+        "Modif1": "27",
+        "indicateur2": "27",
+        "Modif2": "27"
+
+    },
+    {
+        "id": 4,
+        "ChampA": "A4",
+        "ChampB": "B4",
+        "ChampC": "C4",
+        "ChampD": "D7",
+        "indicateur1": "33",
+        "Modif1": "33",
+        "indicateur2": "33",
+        "Modif2": "33"
+
+    },
+    {
+        "id": 5,
+        "ChampA": "A1",
+        "ChampB": "B2",
+        "ChampC": "C2",
+        "ChampD": "D5",
+        "indicateur1": "39",
+        "Modif1": "39",
+        "indicateur2": "39",
+        "Modif2": "39"
+
+    },
+    {
+        "id": 6,
+        "ChampA": "A2",
+        "ChampB": "B3",
+        "ChampC": "C3",
+        "ChampD": "D6",
+        "indicateur1": "45",
+        "Modif1": "45",
+        "indicateur2": "45",
+        "Modif2": "45"
+
+    },
+    {
+        "id": 7,
+        "ChampA": "A3",
+        "ChampB": "B4",
+        "ChampC": "C4",
+        "ChampD": "D7",
+        "indicateur1": "51",
+        "Modif1": "51",
+        "indicateur2": "51",
+        "Modif2": "51"
+
+    }
+
+]
